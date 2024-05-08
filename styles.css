@@ -26,6 +26,7 @@ h1{
     border-radius: 50%;
     height: 400px;
     width: 400px;
+    background:blue;
 }
 header {
     background-color: #333;
