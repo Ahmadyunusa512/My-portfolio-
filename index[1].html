@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Yunusa Sulaiman - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body class="background">
+    <h1>Welcome to my portfolio website</h1>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+    <img src="Snapchat-1595551302_1.png" class="hello">
+    <h1 class="boy">hi<br> my name is Ahmad Yunusa Sulaiman
+    <br>UG22ICT1031</h1>
+    <h5>UI/UX Designer</h5>
+    <section id="home">
+    
+    
+   
+        <div class="container">
+            <h1>Ahmad Yunusa Sulaiman</h1>
+            <p>Welcome to my portfolio website. Explore my work and skills.</p>
+            <a href="#portfolio" class="btn">View Portfolio</a>
+        </div>
+    </section>
+    
+    <section id="portfolio">
+        <div class="container">
+         <div class="gallery">
+       <h1>MY ACHIEVEMENT</h1>
+       <p>Here are some of my achievements</p>
+        <img src="photo1.jpeg" alt="Image 1"class="portfolio">
+        <img src="photo2.jpg" alt="Image 2" class="portfolio">
+        <img src="photo3.png" alt="Image 3" class="portfolio">
+       
+    </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="container">
+        
+        </div>
+    </section>
+    
+    <section id="services">
+        <div class="container">
+           
+        </div>
+    </section>
+    
+    <section id="testimonials">
+        <div class="container">
+        
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+          
+        </div>
+    </section>
+    <header>
+        <h1>About [AHMAD YUNUSA SULAIMAN]</h1>
+    </header>
+
+    <section>
+        <h2>Our Mission</h2>
+        <p>[our mission is design and implement a community outreach program <br> teach basic digital literacy skills]</p>
+    </section>
+
+    <section>
+        <h2>My Story</h2>
+        <p id="anas">[In the bustling city of kano state, Ahmad Yunusa Sulaiman was known as the tech-savvy whiz kid with a heart of gold. Despite his young age, Ahmad was passionate about using his ICT skills to make a difference in his community.Ahmad attended El-litinin college School,where he was not only at the top of his class in computer science but also a dedicated member of the school's community service club. One day, during a club meeting, Ahmad learned about the digital divide that existed in their city. Many underprivileged families lacked access to computers and the internet, hindering their educational and economic opportunities.Determined to bridge this gap,His aim has always been to create a world with technology literacy and support others .He's determined to make a difference in the world of IT and beyond.]</p>
+    </section>
+
+    <section>
+        <h2>Our Values</h2>
+        <p>[I stand to change the IT world and Beyond]</p>
+    </section>
+    <section>
+        <h2>What I Do</h2>
+        <p>[our aim is to create a developing platform that connects volunteer IT  professionals with non-profit organization in need of technical support.This platform facilitate the matching process, provides for both volunteersand organizations,and track the impact of the support provided.]</p>
+    </section>
+    <section>
+        <div>
+    <header><a href="#contact"></a>Contact Me</header>
+    <p>We'd love to hear from you! Feel free to reach out through any of the following channels:</p>
+    </div>
+    </section>
+    <h2>Email</h2>
+    <p>For general inquiries or feedback, you can email us at <a href="mailto:ahmadyunsa349@gmail.com">ahmadyunsa349@gmail.com</a>.</p>
+    
+    <h2>Phone</h2>
+    <p>if you prefer to talk over the phone, you can reach us at +(234)7049424936 during business hours.</p>
+    
+    <h2>Social Media</h2>
+    <p>Connect with us on social media:</p>
+    
+    <ul>
+        <li><a href="https://twitter.com/example">Twitter</a></li>
+        <li><a href="https://facebook.com/example">Facebook</a></li>
+        <li><a href="https://instagram.com/example">Instagram</a></li>
+    </ul>
+    
+    <h2>GitHub</h2>
+    <p>Explore our projects and contribute on GitHub:</p>
+    <p><a href="https://github.com/example">GitHub</a></p>
+    
+    <h2>Office Address</h2>
+    <p>Visit us at our office:</p>
+    <p>XGRJ+JGW, Emir Palace Rd, Kofar Nassarawa, Kano 700103, Kano</p>
+    <h1>OUR LOCATION</h1>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer ></script>
+    <p>We're looking forward to hearing from you!</p>
+   <h1>Comments</h1>
+    <form id="comment-form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="comments">
+        <script>
+            document.getElementById('comment-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var name = document.getElementById('name').value;
+            var comment = document.getElementById('comment').value;
+            var commentElement = document.createElement('div');
+            commentElement.innerHTML = '<strong>' + name + ':</strong> ' + comment;
+            document.getElementById('comments').appendChild(commentElement);
+            document.getElementById('name').value = '';
+            document.getElementById('comment').value = '';
+        });
+        </script>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ahmad Yunusa Sulaiman. All rights reserved.</p>
+        
+    </footer>
+     <script>
+        var slideIndex = 0;
+        var slides = document.querySelectorAll('.gallery img');
+        var slideshowInterval;
+
+        function showSlides() {
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        function startSlideshow() {
+            slideshowInterval = setInterval(showSlides, 2000); // Change slide every 2 seconds
+        }
+
+        function stopSlideshow() {
+            clearInterval(slideshowInterval);
+        }
+    </script>
+</body>
+</html>
